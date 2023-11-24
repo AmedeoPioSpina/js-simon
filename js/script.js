@@ -162,7 +162,7 @@ const start = () => {
     // countdownAry[2] = 0;
     // countdownAry[3] = 4;
 
-    countdownTimer = setInterval(countdown, 0, countdownAry);
+    countdownTimer = setInterval(countdown, 1, countdownAry);
 };
 
 let countdownTimer;
