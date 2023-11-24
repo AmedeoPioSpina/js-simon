@@ -30,7 +30,7 @@ const countdown = (timeRemained) => {
                     timeRemained[1] = 59;
                 }
                 else{
-                    if(timeRemained[4] === 0 && timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
+                    if(timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
                         clearInterval(countdownTimer);
                         endCountdownMessage(timeRemained);
                     }
@@ -42,7 +42,7 @@ const countdown = (timeRemained) => {
                     timeRemained[1] = 59;
                 }
                 else{
-                    if(timeRemained[4] === 0 && timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
+                    if(timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
                         clearInterval(countdownTimer);
                         endCountdownMessage(timeRemained);
                     }
@@ -60,7 +60,7 @@ const countdown = (timeRemained) => {
                     timeRemained[1] = 59;
                 }
                 else{
-                    if(timeRemained[4] === 0 && timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
+                    if(timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
                         clearInterval(countdownTimer);
                         endCountdownMessage(timeRemained);
                     }
@@ -80,7 +80,7 @@ const countdown = (timeRemained) => {
                     timeRemained[1] = 59;
                 }
                 else{
-                    if(timeRemained[4] === 0 && timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
+                    if(timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
                         clearInterval(countdownTimer);
                         endCountdownMessage(timeRemained);
                     }
@@ -92,7 +92,7 @@ const countdown = (timeRemained) => {
                         timeRemained[1] = 59;
                     }
                     else{
-                        if(timeRemained[4] === 0 && timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
+                        if(timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
                             clearInterval(countdownTimer);
                             endCountdownMessage(timeRemained);
                         }
@@ -110,7 +110,7 @@ const countdown = (timeRemained) => {
                     timeRemained[1] = 59;
                 }
                 else{
-                    if(timeRemained[4] === 0 && timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
+                    if(timeRemained[3] === 0 && timeRemained[2] === 0 && timeRemained[1] === 0 && timeRemained[0] === 0){
                         clearInterval(countdownTimer);
                         endCountdownMessage(timeRemained);
                     }
@@ -157,12 +157,12 @@ const start = () => {
     ]
     newCountdownContent(countdownAry);
 
-    countdownAry[0] = 0;
-    countdownAry[1] = 0;
-    countdownAry[2] = 0;
-    countdownAry[3] = 4;
+    // countdownAry[0] = 0;
+    // countdownAry[1] = 0;
+    // countdownAry[2] = 0;
+    // countdownAry[3] = 4;
 
-    countdownTimer = setInterval(countdown, 1, countdownAry);
+    countdownTimer = setInterval(countdown, 0, countdownAry);
 };
 
 let countdownTimer;
