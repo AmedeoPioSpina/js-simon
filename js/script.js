@@ -157,7 +157,12 @@ const start = () => {
     ]
     newCountdownContent(countdownAry);
 
-    countdownTimer = setInterval(countdown, 1, countdownAry);
+    // countdownAry[0] = 0;
+    // countdownAry[1] = 0;
+    // countdownAry[2] = 0;
+    // countdownAry[3] = 4;
+
+    countdownTimer = setInterval(countdown, 0, countdownAry);
 };
 
 let countdownTimer;
