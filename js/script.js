@@ -88,23 +88,18 @@ const endCountdownMessage = (timeRemained) => {
 
 const start = () => {
     let date = new Date();
-    let daysRemained = 30 - date.getDay() + 31;
+    let targetDateMs = new Date("2024-01-01T00:00:00").getTime();
+    let daysRemained = Math.floor((targetDateMs - date) / (24*60*60*1000));
     let dayHoursRemained = 24 - date.getHours();
     let hourMinutisRemained = 60 - date.getMinutes();
     let minuteSecondsRemained = 60 - date.getSeconds();
     let countdownAry = [
-        daysRemained,
+        daysRemained - 1,
         dayHoursRemained,
         hourMinutisRemained,
         minuteSecondsRemained,
     ]
     newCountdownContent(countdownAry);
-
-    countdownAry[0] = 0;
-    countdownAry[1] = 0;
-    countdownAry[2] = 0;
-    countdownAry[3] = 5;
-
     countdownTimer = setInterval(countdown, 1000, countdownAry);
 };
 
